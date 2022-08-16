@@ -7,7 +7,7 @@ public class Main {
         while (!clients.isEmpty()) {
             for (Person client : clients) {
                 if (client.countTickets()) {
-                    clients.addLast(client);
+                    clients.offerLast(client);
                     System.out.println(client);
                     clients.remove(client);
                 } else {
